@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundación Patitas Felices</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .carrusel-img img:nth-child(1)::after { content: "Rescate en acción"; }
+        .carrusel-img img:nth-child(2)::after { content: "Voluntariado feliz"; }
+        .carrusel-img img:nth-child(3)::after { content: "Adopción responsable"; }
+        .carrusel-img img:nth-child(4)::after { content: "Cuidado veterinario"; }
+        .carrusel-img img:nth-child(5)::after { content: "Segundas oportunidades"; }
+        .carrusel-img img::after {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: white;
+            background: rgba(0,0,0,0.7);
+            padding: 5px 10px;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <!-- BARRA SUPERIOR -->
+<header class="header">
+    <img src="../imagenes/logo.png" alt="Logo Fundación" class="logo">
+    <h1 class="titulo">Fundación Patitas Felices</h1>
+</header>
+
+
+
+    <!-- BANNER -->
+    <section class="banner">
+        <h2>Rescatamos, protegemos y damos segundas oportunidades</h2>
+    </section>
+<br><br><br>
+    <!-- BOTONES DE ACCIÓN -->
+    <section class="botones-accion">
+  <form action="#nosotros" method="get" class="btn-form">
+    <button type="submit" class="btn">Conócenos</button>
+  </form>
+
+  <form action="#adoptar" method="get" class="btn-form">
+    <button type="submit" class="btn">Adopta</button>
+  </form>
+</section>
+<br><br><br>
+
+    <!-- CARRUSEL 1 -->
+    <section class="carrusel">
+    <div class="carrusel-img">
+        <img src="../imagenes/animal1.jpeg" alt="">
+        <img src="../imagenes/animal2.jpg" alt="">
+        <img src="../imagenes/animal3.jpeg" alt="">
+        <img src="../imagenes/animal4.jpg" alt="">
+        <img src="../imagenes/animal5.jpeg" alt="">
+    </div>
+</section>
+
+<br><br><br>
+    <!-- SECCIÓN RESUMEN -->
+    <section id="nosotros" class="resumen">
+        <h2>¿Qué hacemos?</h2>
+        <p>
+            Las fundaciones y refugios de animales callejeros cumplen una labor esencial en la sociedad: 
+            rescatar, proteger y brindar una segunda oportunidad a cientos de animales que han sido 
+            abandonados, maltratados o se encuentran en situación de vulnerabilidad. En Patitas Felices nos 
+            encargamos de ofrecer atención veterinaria, alimentación, un espacio seguro y procesos de 
+            rehabilitación emocional, preparando a cada animal para encontrar un hogar responsable. 
+            También desarrollamos campañas de educación, jornadas de esterilización y proyectos de 
+            sensibilización sobre el cuidado animal, apoyándonos en el trabajo de voluntarios y las 
+            donaciones que permiten sostener esta misión día a día.
+        </p><br><br>
+
+        <div class="botones">
+            <a href="#adoptar" class="btn-small">Adopta</a>
+            <a href="contacto.html" class="btn-small">Donaciones</a>
+            <a href="contacto.html" class="btn-small">Voluntariado</a>
+            <a href="contacto.html" class="btn-small">Contacto</a>
+        </div>
+    </section>
+
+    <!-- MISIÓN Y VISIÓN -->
+    <section class="mision-vision">
+        <div class="bloque">
+            <img src="../imagenes/mision.jpg" alt="Ícono Misión" class="icono">
+            <h3>Misión</h3>
+            <p>
+                Brindar rescate, protección y atención integral a animales callejeros, garantizando su bienestar
+                físico, emocional y social. Nos comprometemos a ofrecer procesos de rehabilitación,
+                esterilización, adopción responsable y seguimiento post-adopción, con un enfoque ético y
+                humanitario. Además, trabajamos para promover una cultura de respeto hacia la vida animal a
+                través de programas educativos, alianzas comunitarias y acciones que impulsen la
+                responsabilidad y empatía en nuestra sociedad.
+            </p>
+        </div>
+
+        <div class="bloque">
+            <img src="../imagenes/vision.jpg" alt="Ícono Visión" class="icono">
+            <h3>Visión</h3>
+            <p>
+                Ser una fundación líder en Colombia en rescate, protección y adopción de animales, destacándonos
+                por la transparencia, la ética y la calidad humana con la que desarrollamos cada una de nuestras
+                acciones. Aspiramos a convertirnos en un referente nacional de educación animalista, promoviendo
+                políticas de bienestar, entornos seguros y comunidades conscientes del valor de cada ser vivo.
+                Buscamos ampliar nuestro alcance, fortalecer nuestros programas y transformar la vida de miles de
+                animales a largo plazo.
+            </p>
+        </div>
+    </section>
+
+    <!-- CARRUSEL 2 -->
+    <section class="carrusel">
+        <div class="carrusel-img">
+            <img src="../imagenes/animal6.jpeg" alt="">
+            <img src="../imagenes/animal7.jpeg" alt="">
+            <img src="../imagenes/animal8.jpeg" alt="">
+            <img src="../imagenes/animal9.jpg" alt="">
+            <img src="../imagenes/animal10.jpeg" alt="">
+            <img src="../imagenes/animal11.jpg" alt="">
+            <img src="../imagenes/voluntariado1.jpeg" alt="">
+            <img src="../imagenes/voluntariado2.jpg" alt="">
+        </div>
+    </section>
+
+    <section id="adoptar" class="animales-disponibles">
+    <h2>Animales disponibles para adopción</h2>
+    <div class="grid-tarjetas">
+        <!-- Tarjeta 1 -->
+        <div class="tarjeta">
+            <img src="../imagenes/animal1.jpg" alt="Luna">
+            <div class="info">
+                <h3>Luna</h3>
+                <p>Edad: 2 años</p>
+                <p>Tamaño: Mediano</p>
+                <p>Raza: Criolla</p>
+                <p>Estado: Disponible</p>
+                <p>Estado de salud: Esterilizada, desparasitada y en excelente estado</p>
+                <p>Descripción corta: Juguetona, cariñosa y perfecta para familias con niños.</p>
+                <a href="perfil-luna.html" class="btn">Ver perfil</a>
+            </div>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="tarjeta">
+            <img src="../imagenes/animal2.jpg" alt="Max">
+            <div class="info">
+                <h3>Max</h3>
+                <p>Edad: 3 años</p>
+                <p>Tamaño: Grande</p>
+                <p>Raza: Labrador</p>
+                <p>Estado: Disponible</p>
+                <p>Estado de salud: Vacunado y saludable</p>
+                <p>Descripción corta: Muy juguetón y amigable con otros perros.</p>
+                <a href="perfil-max.html" class="btn">Ver perfil</a>
+            </div>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="tarjeta">
+            <img src="../imagenes/animal3.jpg" alt="Mia">
+            <div class="info">
+                <h3>Mia</h3>
+                <p>Edad: 1 año</p>
+                <p>Tamaño: Pequeño</p>
+                <p>Raza: Criolla</p>
+                <p>Estado: Disponible</p>
+                <p>Estado de salud: Esterilizada y saludable</p>
+                <p>Descripción corta: Muy cariñosa y tranquila, ideal para apartamento.</p>
+                <a href="perfil-mia.html" class="btn">Ver perfil</a>
+            </div>
+        </div>
+
+        <!-- Tarjeta 4 -->
+        <div class="tarjeta">
+            <img src="../imagenes/animal4.jpg" alt="Rocky">
+            <div class="info">
+                <h3>Rocky</h3>
+                <p>Edad: 4 años</p>
+                <p>Tamaño: Grande</p>
+                <p>Raza: Pastor</p>
+                <p>Estado: Disponible</p>
+                <p>Estado de salud: Esterilizado, vacunado</p>
+                <p>Descripción corta: Protector y leal, ideal para casa con jardín.</p>
+                <a href="perfil-rocky.html" class="btn">Ver perfil</a>
+            </div>
+        </div>
+
+        <!-- Tarjeta 5 -->
+        <div class="tarjeta">
+            <img src="../imagenes/animal5.jpg" alt="Bella">
+            <div class="info">
+                <h3>Bella</h3>
+                <p>Edad: 2 años</p>
+                <p>Tamaño: Mediano</p>
+                <p>Raza: Criolla</p>
+                <p>Estado: Disponible</p>
+                <p>Estado de salud: Desparasitada y saludable</p>
+                <p>Descripción corta: Juguetona y muy sociable con niños.</p>
+                <button class="btn">Ver perfil</button>
+            </div>
+        </div>
+
+        <!-- Tarjeta 6 -->
+        <div class="tarjeta">
+            <img src="../imagenes/animal6.jpg" alt="Toby">
+            <div class="info">
+                <h3>Toby</h3>
+                <p>Edad: 3 años</p>
+                <p>Tamaño: Mediano</p>
+                <p>Raza: Beagle</p>
+                <p>Estado: Disponible</p>
+                <p>Estado de salud: Vacunado y saludable</p>
+                <p>Descripción corta: Activo y curioso, necesita espacio para jugar.</p>
+                <button class="btn">Ver perfil</button>
+            </div>
+        </div>
+
+        <!-- Tarjeta 7 -->
+        <div class="tarjeta">
+            <img src="../imagenes/animal7.jpg" alt="Lola">
+            <div class="info">
+                <h3>Lola</h3>
+                <p>Edad: 1 año</p>
+                <p>Tamaño: Pequeño</p>
+                <p>Raza: Criolla</p>
+                <p>Estado: Disponible</p>
+                <p>Estado de salud: Esterilizada y saludable</p>
+                <p>Descripción corta: Cariñosa y tranquila, perfecta para apartamento.</p>
+                <button class="btn">Ver perfil</button>
+            </div>
+        </div>
+
+        <!-- Tarjeta 8 -->
+        <div class="tarjeta">
+            <img src="../imagenes/animal8.jpg" alt="Simba">
+            <div class="info">
+                <h3>Simba</h3>
+                <p>Edad: 2 años</p>
+                <p>Tamaño: Mediano</p>
+                <p>Raza: Criolla</p>
+                <p>Estado: Disponible</p>
+                <p>Estado de salud: Desparasitado y saludable</p>
+                <p>Descripción corta: Alegre y juguetón, necesita un hogar activo.</p>
+                <button class="btn">Ver perfil</button>
+            </div>
+        </div>
+
+        <!-- Tarjeta 9 -->
+        <div class="tarjeta">
+            <img src="../imagenes/animal9.jpg" alt="Nina">
+            <div class="info">
+                <h3>Nina</h3>
+                <p>Edad: 3 años</p>
+                <p>Tamaño: Mediano</p>
+                <p>Raza: Criolla</p>
+                <p>Estado: Disponible</p>
+                <p>Estado de salud: Esterilizada y saludable</p>
+                <p>Descripción corta: Sociable y amigable, ideal para familias con niños.</p>
+                <button class="btn">Ver perfil</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>Fundación Patitas Felices • 2025 • Todos los derechos reservados</p>
+        <p>Contacto: patitasfelices@gmail.com</p>
+    </footer>
+
+</body>
+</html>
