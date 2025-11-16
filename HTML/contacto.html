@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contacto — Fundación Patitas Felices</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="site-header small">
+    <div class="header-inner">
+      <img src="imagenes/logo.jpg" alt="Logo" class="logo">
+      <div class="brand">
+        <h1>Fundación Patitas Felices</h1>
+      </div>
+      <nav class="top-nav">
+        <a href="index.html" class="btn">Inicio</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container form-page">
+    <h2 id="contacto">Formulario de contacto</h2>
+    <p>Campos obligatorios marcados con *</p>
+
+    <!-- Secciones con ancla para preselección simulada -->
+    <section id="adopcion" class="form-panel active-panel">
+      <h3>Solicitud — Adopción</h3>
+      <form action="#" class="form">
+        <label>Nombre *<input type="text" name="nombre" required></label>
+        <label>Apellidos *<input type="text" name="apellidos" required></label>
+        <label>Ciudad *<input type="text" name="ciudad" required></label>
+        <label>Correo electrónico *<input type="email" name="email" required></label>
+        <label>Teléfono <span class="opcional">(opcional)</span><input type="tel" name="telefono"></label>
+
+        <label>Tipo de consulta *
+          <select name="tipo-consulta" required>
+            <option value="">Seleccione una opción</option>
+            <option value="adopcion" selected>Adopción</option>
+            <option value="donacion">Donación</option>
+            <option value="voluntariado">Voluntariado</option>
+            <option value="info">Información general</option>
+            <option value="otro">Otro</option>
+          </select>
+        </label>
+
+        <label>Mensaje *<textarea name="mensaje" rows="5" required></textarea></label>
+
+        <!-- Ejemplo de estado visual: agregar clase "error" or "success" en el input para simular -->
+        <!-- <input class="error" ... > -->
+
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Enviar</button>
+          <a href="index.html" class="btn">Volver</a>
+        </div>
+      </form>
+    </section>
+
+    <!-- DONACION (simula preselección) -->
+    <section id="donacion" class="form-panel">
+      <h3>Formulario — Donaciones</h3>
+      <form action="#" class="form">
+        <label>Nombre *<input type="text" name="nombre" required></label>
+        <label>Apellidos *<input type="text" name="apellidos" required></label>
+        <label>Ciudad *<input type="text" name="ciudad" required></label>
+        <label>Correo electrónico *<input type="email" name="email" required></label>
+        <label>Teléfono <span class="opcional">(opcional)</span><input type="tel" name="telefono"></label>
+
+        <label>Tipo de consulta *
+          <select name="tipo-consulta" required>
+            <option value="">Seleccione una opción</option>
+            <option value="adopcion">Adopción</option>
+            <option value="donacion" selected>Donación</option>
+            <option value="voluntariado">Voluntariado</option>
+            <option value="info">Información general</option>
+            <option value="otro">Otro</option>
+          </select>
+        </label>
+
+        <label>Mensaje *<textarea name="mensaje" rows="5" required></textarea></label>
+
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Enviar</button>
+          <a href="index.html" class="btn">Volver</a>
+        </div>
+      </form>
+    </section>
+
+    <!-- VOLUNTARIADO -->
+    <section id="voluntariado" class="form-panel">
+      <h3>Formulario — Voluntariado</h3>
+      <form action="#" class="form">
+        <label>Nombre *<input type="text" name="nombre" required></label>
+        <label>Apellidos *<input type="text" name="apellidos" required></label>
+        <label>Ciudad *<input type="text" name="ciudad" required></label>
+        <label>Correo electrónico *<input type="email" name="email" required></label>
+        <label>Teléfono <span class="opcional">(opcional)</span><input type="tel" name="telefono"></label>
+
+        <label>Tipo de consulta *
+          <select name="tipo-consulta" required>
+            <option value="">Seleccione una opción</option>
+            <option value="adopcion">Adopción</option>
+            <option value="donacion">Donación</option>
+            <option value="voluntariado" selected>Voluntariado</option>
+            <option value="info">Información general</option>
+            <option value="otro">Otro</option>
+          </select>
+        </label>
+
+        <label>Mensaje *<textarea name="mensaje" rows="5" required></textarea></label>
+
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Enviar</button>
+          <a href="index.html" class="btn">Volver</a>
+        </div>
+      </form>
+    </section>
+
+    <!-- INFO -->
+    <section id="info" class="form-panel">
+      <h3>Formulario — Información general</h3>
+      <form action="#" class="form">
+        <label>Nombre *<input type="text" name="nombre" required></label>
+        <label>Apellidos *<input type="text" name="apellidos" required></label>
+        <label>Ciudad *<input type="text" name="ciudad" required></label>
+        <label>Correo electrónico *<input type="email" name="email" required></label>
+        <label>Teléfono <span class="opcional">(opcional)</span><input type="tel" name="telefono"></label>
+
+        <label>Tipo de consulta *
+          <select name="tipo-consulta" required>
+            <option value="">Seleccione una opción</option>
+            <option value="adopcion">Adopción</option>
+            <option value="donacion">Donación</option>
+            <option value="voluntariado">Voluntariado</option>
+            <option value="info" selected>Información general</option>
+            <option value="otro">Otro</option>
+          </select>
+        </label>
+
+        <label>Mensaje *<textarea name="mensaje" rows="5" required></textarea></label>
+
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Enviar</button>
+          <a href="index.html" class="btn">Volver</a>
+        </div>
+      </form>
+    </section>
+
+    <!-- OTRO -->
+    <section id="otro" class="form-panel">
+      <h3>Formulario — Otro</h3>
+      <form action="#" class="form">
+        <label>Nombre *<input type="text" name="nombre" required></label>
+        <label>Apellidos *<input type="text" name="apellidos" required></label>
+        <label>Ciudad *<input type="text" name="ciudad" required></label>
+        <label>Correo electrónico *<input type="email" name="email" required></label>
+        <label>Teléfono <span class="opcional">(opcional)</span><input type="tel" name="telefono"></label>
+
+        <label>Tipo de consulta *
+          <select name="tipo-consulta" required>
+            <option value="">Seleccione una opción</option>
+            <option value="adopcion">Adopción</option>
+            <option value="donacion">Donación</option>
+            <option value="voluntariado">Voluntariado</option>
+            <option value="info">Información general</option>
+            <option value="otro" selected>Otro</option>
+          </select>
+        </label>
+
+        <label>Mensaje *<textarea name="mensaje" rows="5" required></textarea></label>
+
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Enviar</button>
+          <a href="index.html" class="btn">Volver</a>
+        </div>
+      </form>
+    </section>
+
+    <aside class="contact-info">
+      <h4>Contacto directo</h4>
+      <p>Email: <a href="mailto:patitasfelicesoficial@gmail.com">patitasfelicesoficial@gmail.com</a></p>
+      <p>Teléfono: <span class="opcional">(opcional)</span></p>
+      <p>Redes: (aquí puedes añadir enlaces a perfiles)</p>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <strong>Fundación Patitas Felices</strong>
+        <div>© 2025 – Todos los derechos reservados</div>
+      </div>
+      <div class="footer-right">
+        <div>Correo: <a href="mailto:patitasfelicesoficial@gmail.com">patitasfelicesoficial@gmail.com</a></div>
+        <div>Desarrollado por: Ingeniero Victor Alfonso Guzman Gazabon</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

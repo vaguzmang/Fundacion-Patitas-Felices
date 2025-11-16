@@ -1,99 +1,239 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundación Patitas Felices</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fundación Patitas Felices</title>
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="header-inner">
+      <img src="imagenes/logo.jpg" alt="Logo Fundación Patitas Felices" class="logo">
+      <div class="brand">
+        <h1>Fundación Patitas Felices</h1>
+        <p class="slogan">Segundas oportunidades con amor</p>
+      </div>
+      <nav class="top-nav">
+        <a href="#conocenos" class="btn">Conócenos</a>
+        <a href="contacto.html#adopcion" class="btn primary">Adopta</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Banner Principal -->
-    <header class="banner">
-        <div class="banner-content">
-            <img src="/IMAGENES/logo.png    " alt="Logo Fundación Patitas Felices" class="logo">
-            <div class="textos-banner">
-                <h1>Fundación Patitas Felices</h1>
-                <p>“Porque todos merecen una segunda oportunidad”</p>
-                <button class="boton">Adopta</button>
-                <button class="boton">Conocenos</button>
+  <!-- CARRUSEL PRINCIPAL (automático con CSS) -->
+  <section class="hero" aria-label="Carrusel principal">
+    <div class="carousel">
+      <figure class="slide"><img src="imagenes/animal1.jpg" alt="Animal 1"><figcaption>Rescate y amor</figcaption></figure>
+      <figure class="slide"><img src="imagenes/animal2.jpg" alt="Animal 2"><figcaption>Cuidados veterinarios</figcaption></figure>
+      <figure class="slide"><img src="imagenes/animal3.jpg" alt="Animal 3"><figcaption>Adopciones felices</figcaption></figure>
+      <figure class="slide"><img src="imagenes/animal4.jpg" alt="Animal 4"><figcaption>Voluntariado</figcaption></figure>
+      <figure class="slide"><img src="imagenes/animal5.jpg" alt="Animal 5"><figcaption>Refugio seguro</figcaption></figure>
+    </div>
+  </section>
 
-            </div>
-        </div>
-    </header>
+  <!-- RESUMEN DE LA LABOR -->
+  <main>
+    <section id="conocenos" class="container resumen">
+      <h2>Resumen de la labor</h2>
+      <p>
+        Las fundaciones y refugios de animales callejeros realizan una labor crucial de rescate,
+        rehabilitación y adopción, ofreciendo un espacio seguro y cuidados veterinarios a animales
+        abandonados, maltratados o accidentados. Esta labor se sustenta en el apoyo de donaciones y el
+        trabajo voluntario para cubrir gastos de alimentación, refugio, salud y esterilización, con el
+        objetivo final de darles una segunda oportunidad en un nuevo hogar.
+      </p>
 
-    <!-- Carrusel -->
-    <section class="carrusel">
+      <div class="links-grid">
+        <a href="contacto.html#adopcion" class="link-card">Adopta</a>
+        <a href="contacto.html#donacion" class="link-card">Donaciones</a>
+        <a href="contacto.html#voluntariado" class="link-card">Voluntariado</a>
+        <a href="contacto.html#info" class="link-card">Contacto</a>
+      </div>
+    </section>
+
+    <!-- MISION Y VISION -->
+    <section class="container mision-vision">
+      <div class="card">
+        <h3>Misión</h3>
+        <p>Brindar rescate, protección y atención integral a animales callejeros en situación de vulnerabilidad, garantizando su bienestar físico y emocional. Trabajamos para rehabilitarlos y encontrarles un hogar amoroso y responsable, promoviendo la adopción consciente, la educación ciudadana y el respeto por la vida animal.</p>
+      </div>
+      <div class="card">
+        <h3>Visión</h3>
+        <p>Ser una de las fundaciones líderes en Colombia en el rescate, rehabilitación y adopción de animales callejeros, reconocida por su compromiso ético, transparencia y acciones educativas que fomenten una cultura de respeto, empatía y protección hacia todos los animales. Aspiramos a reducir significativamente el abandono y construir una comunidad donde cada patita tenga un futuro seguro y feliz.</p>
+      </div>
+    </section>
+
+    <!-- CARRUSEL SECUNDARIO (por clic con radio inputs) -->
+    <section class="container gallery-section">
+      <h2>Actividades y voluntariado</h2>
+
+      <div class="css-carousel">
+        <!-- radios -->
+        <input type="radio" name="sec" id="sec1" checked>
+        <input type="radio" name="sec" id="sec2">
+        <input type="radio" name="sec" id="sec3">
+        <input type="radio" name="sec" id="sec4">
+        <input type="radio" name="sec" id="sec5">
+
         <div class="slides">
-            <img src="/IMAGENES/animal1.jpeg" alt="Animal 1">
-            <img src="/IMAGENES/animal2.jpg" alt="Animal 2">
-            <img src="/IMAGENES/animal3.jpeg" alt="Animal 3">
-            <img src="/IMAGENES/animal4.jpg" alt="Animal 4">
+          <div class="gslide" id="g1"><img src="imagenes/voluntariado1.jpg" alt="Voluntariado 1"></div>
+          <div class="gslide" id="g2"><img src="imagenes/voluntariado2.jpg" alt="Voluntariado 2"></div>
+          <div class="gslide" id="g3"><img src="imagenes/animal6.jpg" alt="Actividad 3"></div>
+          <div class="gslide" id="g4"><img src="imagenes/animal7.jpg" alt="Actividad 4"></div>
+          <div class="gslide" id="g5"><img src="imagenes/animal8.jpg" alt="Actividad 5"></div>
         </div>
+
+        <div class="controls">
+          <label for="sec1" class="dot"></label>
+          <label for="sec2" class="dot"></label>
+          <label for="sec3" class="dot"></label>
+          <label for="sec4" class="dot"></label>
+          <label for="sec5" class="dot"></label>
+        </div>
+      </div>
     </section>
 
-    <!-- Catálogo de Adopción -->
-    <section class="catalogo">
-        <h2>Conoce a nuestros amigos en adopción 🐾</h2>
-        <div class="grid">
-            <div class="card">
-                <img src="/IMAGENES/animal5.jpeg" alt="Animal 5">
-                <h3>Luna</h3>
-                <p>Edad: 3 años</p>
-                <p>Salud: Excelente</p>
-                <p>Tamaño: Mediano</p>
-            </div>
-            <div class="card">
-                <img src="/IMAGENES/animal6.jpeg" alt="Animal 6">
-                <h3>Rocky</h3>
-                <p>Edad: 5 años</p>
-                <p>Salud: Buena</p>
-                <p>Tamaño: Grande</p>
-            </div>
-            <div class="card">
-                <img src="imagenes/animal7.jpg" alt="Animal 7">
-                <h3>Canela</h3>
-                <p>Edad: 2 años</p>
-                <p>Salud: Excelente</p>
-                <p>Tamaño: Pequeño</p>
-            </div>
-            <div class="card">
-                <img src="imagenes/animal8.jpg" alt="Animal 8">
-                <h3>Max</h3>
-                <p>Edad: 4 años</p>
-                <p>Salud: Buena</p>
-                <p>Tamaño: Grande</p>
-            </div>
-            <div class="card">
-                <img src="imagenes/animal9.jpg" alt="Animal 9">
-                <h3>Pelusa</h3>
-                <p>Edad: 1 año</p>
-                <p>Salud: Excelente</p>
-                <p>Tamaño: Pequeño</p>
-            </div>
-            <div class="card">
-                <img src="imagenes/animal10.jpg" alt="Animal 10">
-                <h3>Toby</h3>
-                <p>Edad: 6 años</p>
-                <p>Salud: Buena</p>
-                <p>Tamaño: Grande</p>
-            </div>
-            <div class="card">
-                <img src="imagenes/animal11.jpg" alt="Animal 11">
-                <h3>Sol</h3>
-                <p>Edad: 2 años</p>
-                <p>Salud: Excelente</p>
-                <p>Tamaño: Mediano</p>
-            </div>
-            <div class="card">
-                <img src="imagenes/animal12.jpg" alt="Animal 12">
-                <h3>Chispa</h3>
-                <p>Edad: 3 años</p>
-                <p>Salud: Buena</p>
-                <p>Tamaño: Pequeño</p>
-            </div>
-        </div>
+    <!-- ANIMALES DISPONIBLES (grid) -->
+    <section class="container animales">
+      <h2>Animales disponibles — Adopta el tuyo</h2>
+      <div class="grid">
+        <!-- Repetir tarjeta para 8 animales (ejemplo: animal1..animal8) -->
+        <!-- Tarjeta 1 -->
+        <article class="card-tarjeta">
+          <img src="imagenes/animal1.jpg" alt="Luna">
+          <div class="tarjeta-info">
+            <h4>Luna</h4>
+            <p>Edad: 2 años · Raza: Criolla</p>
+            <p>Estado: Esterilizada, desparasitada</p>
+            <a href="#animal1" class="btn small">Ver perfil</a>
+          </div>
+        </article>
+
+        <!-- Tarjeta 2 -->
+        <article class="card-tarjeta">
+          <img src="imagenes/animal2.jpg" alt="Animal 2">
+          <div class="tarjeta-info">
+            <h4>Simba</h4>
+            <p>Edad: 3 años · Raza: Mestizo</p>
+            <p>Estado: Disponible</p>
+            <a href="#animal2" class="btn small">Ver perfil</a>
+          </div>
+        </article>
+
+        <!-- Tarjeta 3 -->
+        <article class="card-tarjeta">
+          <img src="imagenes/animal3.jpg" alt="Animal 3">
+          <div class="tarjeta-info">
+            <h4>Maya</h4>
+            <p>Edad: 1 año · Raza: Mediana</p>
+            <p>Estado: Disponible</p>
+            <a href="#animal3" class="btn small">Ver perfil</a>
+          </div>
+        </article>
+
+        <!-- Tarjeta 4 -->
+        <article class="card-tarjeta">
+          <img src="imagenes/animal4.jpg" alt="Animal 4">
+          <div class="tarjeta-info">
+            <h4>Rocky</h4>
+            <p>Edad: 4 años · Raza: Pequeña</p>
+            <p>Estado: Disponible</p>
+            <a href="#animal4" class="btn small">Ver perfil</a>
+          </div>
+        </article>
+
+        <!-- Tarjeta 5 -->
+        <article class="card-tarjeta">
+          <img src="imagenes/animal5.jpg" alt="Animal 5">
+          <div class="tarjeta-info">
+            <h4>Nala</h4>
+            <p>Edad: 2 años · Raza: Criolla</p>
+            <p>Estado: Disponible</p>
+            <a href="#animal5" class="btn small">Ver perfil</a>
+          </div>
+        </article>
+
+        <!-- Tarjeta 6 -->
+        <article class="card-tarjeta">
+          <img src="imagenes/animal6.jpg" alt="Animal 6">
+          <div class="tarjeta-info">
+            <h4>Otto</h4>
+            <p>Edad: 3 años · Raza: Mediana</p>
+            <p>Estado: Disponible</p>
+            <a href="#animal6" class="btn small">Ver perfil</a>
+          </div>
+        </article>
+
+        <!-- Tarjeta 7 -->
+        <article class="card-tarjeta">
+          <img src="imagenes/animal7.jpg" alt="Animal 7">
+          <div class="tarjeta-info">
+            <h4>Fiona</h4>
+            <p>Edad: 1.5 años · Raza: Pequeña</p>
+            <p>Estado: Disponible</p>
+            <a href="#animal7" class="btn small">Ver perfil</a>
+          </div>
+        </article>
+
+        <!-- Tarjeta 8 -->
+        <article class="card-tarjeta">
+          <img src="imagenes/animal8.jpg" alt="Animal 8">
+          <div class="tarjeta-info">
+            <h4>Max</h4>
+            <p>Edad: 5 años · Raza: Grande</p>
+            <p>Estado: Disponible</p>
+            <a href="#animal8" class="btn small">Ver perfil</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODALES (usando :target). Incluye 8 modales de ejemplo -->
+  <div class="modals">
+    <section id="animal1" class="modal">
+      <div class="modal-content">
+        <a href="#" class="close" title="Cerrar">✕</a>
+        <img src="imagenes/animal1.jpg" alt="Luna">
+        <h3>Luna</h3>
+        <p><strong>Edad:</strong> 2 años · <strong>Raza:</strong> Criolla</p>
+        <p><strong>Estado de salud:</strong> Esterilizada, desparasitada y en excelente estado.</p>
+        <p><strong>Historia:</strong> Luna fue rescatada de la calle cuando tenía meses. Es juguetona, cariñosa y perfecta para familias con niños.</p>
+        <a class="btn primary" href="contacto.html#adopcion">Solicitar adopción</a>
+      </div>
     </section>
 
+    <!-- modales adicionales (animal2..animal8). Repetir estructura cambiando id, imagen y texto -->
+    <section id="animal2" class="modal">
+      <div class="modal-content">
+        <a href="#" class="close">✕</a>
+        <img src="imagenes/animal2.jpg" alt="Simba">
+        <h3>Simba</h3>
+        <p>Historia corta de Simba...</p>
+      </div>
+    </section>
+
+    <!-- animal3 -->
+    <section id="animal3" class="modal"><div class="modal-content"><a href="#" class="close">✕</a><img src="imagenes/animal3.jpg" alt=""><h3>Maya</h3><p>Historia corta de Maya...</p></div></section>
+    <section id="animal4" class="modal"><div class="modal-content"><a href="#" class="close">✕</a><img src="imagenes/animal4.jpg" alt=""><h3>Rocky</h3><p>Historia corta de Rocky...</p></div></section>
+    <section id="animal5" class="modal"><div class="modal-content"><a href="#" class="close">✕</a><img src="imagenes/animal5.jpg" alt=""><h3>Nala</h3><p>Historia corta de Nala...</p></div></section>
+    <section id="animal6" class="modal"><div class="modal-content"><a href="#" class="close">✕</a><img src="imagenes/animal6.jpg" alt=""><h3>Otto</h3><p>Historia corta de Otto...</p></div></section>
+    <section id="animal7" class="modal"><div class="modal-content"><a href="#" class="close">✕</a><img src="imagenes/animal7.jpg" alt=""><h3>Fiona</h3><p>Historia corta de Fiona...</p></div></section>
+    <section id="animal8" class="modal"><div class="modal-content"><a href="#" class="close">✕</a><img src="imagenes/animal8.jpg" alt=""><h3>Max</h3><p>Historia corta de Max...</p></div></section>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <strong>Fundación Patitas Felices</strong>
+        <div>© 2025 – Todos los derechos reservados</div>
+      </div>
+      <div class="footer-right">
+        <div>Correo: <a href="mailto:patitasfelicesoficial@gmail.com">patitasfelicesoficial@gmail.com</a></div>
+        <div>Desarrollado por: Ingeniero Victor Alfonso Guzman Gazabon</div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
