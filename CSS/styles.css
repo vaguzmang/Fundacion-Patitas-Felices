@@ -79,42 +79,45 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: black; /* fondo mientras carga la imagen */
+    background: transparent; /* fondo mientras carga la imagen */
 }
 
-/* Contenedor de las imágenes */
-.carrusel {
-    width: 100%;
-    height: 350px; /* altura fija */
-    position: relative;
-    overflow: hidden;
+/* Slider horizontal */
+.carrusel-slider {
+    display: flex;
+    height: 350px;
+    animation: slide 20s infinite linear;
 }
 
-.carrusel-img img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.carrusel-primero .carrusel-slider {
+    width: calc(240% + 20px); /* ancho para 12 imágenes (6 originales + 6 duplicadas) */
+}
+
+.carrusel-segundo .carrusel-slider {
+    width: calc(200% + 20px); /* ancho para 10 imágenes (5 originales + 5 duplicadas) */
+}
+
+.carrusel-primero .carrusel-slider img {
+    width: 16.666%; /* cada imagen ocupa 1/6 del ancho */
+}
+
+.carrusel-segundo .carrusel-slider img {
+    width: 20%; /* cada imagen ocupa 1/5 del ancho */
+}
+
+.carrusel-slider img {
+    height: 350px;
     object-fit: cover; /* cubre todo el contenedor */
-    opacity: 0;
-    animation: fade 15s infinite;
+    display: block;
 }
 
-/* Cada imagen debe aparecer en un momento diferente */
-.carrusel-img img:nth-child(1) { animation-delay: 0s; }
-.carrusel-img img:nth-child(2) { animation-delay: 3s; }
-.carrusel-img img:nth-child(3) { animation-delay: 6s; }
-.carrusel-img img:nth-child(4) { animation-delay: 9s; }
-.carrusel-img img:nth-child(5) { animation-delay: 12s; }
-/* Si tienes más imágenes, agrega más delays de 3s cada uno */
-
-@keyframes fade {
-    0% { opacity: 0; }
-    5% { opacity: 1; }   /* aparece rápido */
-    20% { opacity: 1; }  /* permanece visible */
-    25% { opacity: 0; }  /* desaparece */
-    100% { opacity: 0; }
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }
 
 
